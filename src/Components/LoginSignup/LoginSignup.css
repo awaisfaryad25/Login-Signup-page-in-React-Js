@@ -5,7 +5,11 @@
   --black: #000000;
 }
 
-
+.form_block{
+  min-height: 800px;
+  align-items: center;
+  display: flex;
+}
 
 .formRow{
     display: flex;
