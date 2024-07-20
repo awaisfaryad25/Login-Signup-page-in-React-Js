@@ -9,7 +9,7 @@ const LoginSignup = () => {
 
   return (
     <div>
-      <section className="form_block bg-teal-400">
+      <section className="form_block bg-teal-400 h-100dvh">
         <div className="container">
           <div className="formRow py-16">
             <div className="formWrapper  bg-white">
@@ -37,10 +37,10 @@ const LoginSignup = () => {
                 {action==="Sign Up"? <button className={action=="Log In"? "submitGray" : "submit"} >Sign Up</button>:
                  <button className={action=="Sign Up"? "submitGray" : "submit"} >Log In</button>}
                 
-                
                 <div>
-                <br />
+                
                 {action==="Sign Up"?<div></div>:<div className="forget">
+                  <br />
                   <span className="forget text-xs ">Forget Password? <a className="clickPswd" href="#">Click here.</a></span>
                 </div>}
                 </div>
@@ -48,13 +48,13 @@ const LoginSignup = () => {
 
                 <div>
                   <br />
-                {action==="Sign Up"? <span className="account text-xs">Already have an account ? <a href="" onClick={()=>{setAction("Log In")}}>Log In</a></span> :
-                <span className="account text-xs">Don't have an account? <a href="" onClick={()=>{setAction("Sign Up")}}>Sign Up</a></span>}
+                {action==="Sign Up"? <span className="account text-xs">Already have an account ? <a href="#" onClick={()=>{setAction("Log In")}}>Log In</a></span> :
+                <span className="account text-xs">Don't have an account? <a href="#" onClick={()=>{setAction("Sign Up")}}>Sign Up</a></span>}
                 </div>
                 
               </form>
               <br />
-              <div className="footer">
+              <div className="footer mt-4">
                   <div className="footerLeft"></div>
                   <div className="footerRight">
                     <span className="text-sm font-bold">Login via</span>
