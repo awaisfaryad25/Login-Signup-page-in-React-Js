@@ -9,7 +9,7 @@ const LoginSignup = () => {
 
   return (
     <div>
-      <section className="form_block bg-teal-400 h-100dvh">
+      <section className="form_block bg-teal-400 h-100vh">
         <div className="container">
           <div className="formRow py-16">
             <div className="formWrapper  bg-white">
